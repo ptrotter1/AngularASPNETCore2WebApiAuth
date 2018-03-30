@@ -1,7 +1,7 @@
-using PaulTest.ViewModels.Validations;
+using AngularASPNETCore2WebApiAuth.ViewModels.Validations;
 using FluentValidation.Attributes;
 
-namespace PaulTest.ViewModels
+namespace AngularASPNETCore2WebApiAuth.ViewModels
 {
     [Validator(typeof(CredentialsViewModelValidator))]
     public class CredentialsViewModel

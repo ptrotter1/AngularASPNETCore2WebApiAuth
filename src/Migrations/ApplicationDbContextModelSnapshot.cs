@@ -7,9 +7,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.EntityFrameworkCore.Storage.Internal;
-using PaulTest.Data;
+using AngularASPNETCore2WebApiAuth.Data;
 
-namespace PaulTest.Migrations
+namespace AngularASPNETCore2WebApiAuth.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     partial class ApplicationDbContextModelSnapshot : ModelSnapshot
@@ -129,7 +129,7 @@ namespace PaulTest.Migrations
                     b.ToTable("UserToken");
                 });
 
-            modelBuilder.Entity("PaulTest.Models.Entities.AppUser", b =>
+            modelBuilder.Entity("AngularASPNETCore2WebApiAuth.Models.Entities.AppUser", b =>
                 {
                     b.Property<string>("Id")
                         .ValueGeneratedOnAdd();
@@ -196,7 +196,7 @@ namespace PaulTest.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("PaulTest.Models.Entities.AppUser")
+                    b.HasOne("AngularASPNETCore2WebApiAuth.Models.Entities.AppUser")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -204,7 +204,7 @@ namespace PaulTest.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("PaulTest.Models.Entities.AppUser")
+                    b.HasOne("AngularASPNETCore2WebApiAuth.Models.Entities.AppUser")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -217,7 +217,7 @@ namespace PaulTest.Migrations
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("PaulTest.Models.Entities.AppUser")
+                    b.HasOne("AngularASPNETCore2WebApiAuth.Models.Entities.AppUser")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -225,7 +225,7 @@ namespace PaulTest.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("PaulTest.Models.Entities.AppUser")
+                    b.HasOne("AngularASPNETCore2WebApiAuth.Models.Entities.AppUser")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);

@@ -3,10 +3,10 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Principal;
 using System.Threading.Tasks;
-using PaulTest.Models;
+using AngularASPNETCore2WebApiAuth.Models;
 using Microsoft.Extensions.Options;
  
-namespace PaulTest.Auth
+namespace AngularASPNETCore2WebApiAuth.Auth
 {
     public class JwtFactory : IJwtFactory
     {

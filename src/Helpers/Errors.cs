@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 
-namespace PaulTest.Helpers
+namespace AngularASPNETCore2WebApiAuth.Helpers
 { 
     public static class Errors
     {

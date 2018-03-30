@@ -1,15 +1,15 @@
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using PaulTest.Data;
-using PaulTest.Models.Entities;
+using AngularASPNETCore2WebApiAuth.Data;
+using AngularASPNETCore2WebApiAuth.Models.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
  
-namespace PaulTest.Controllers
+namespace AngularASPNETCore2WebApiAuth.Controllers
 {
   [Authorize(Policy = "ApiUser")]
   [Route("api/[controller]/[action]")]

@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.AspNetCore.Identity;
 
-namespace PaulTest.Models.Entities
+namespace AngularASPNETCore2WebApiAuth.Models.Entities
 {
     public class AppUser : IdentityUser
     {

@@ -1,13 +1,13 @@
 using System.Threading.Tasks;
-using PaulTest.Data;
-using PaulTest.Helpers;
-using PaulTest.Models.Entities;
-using PaulTest.ViewModels;
+using AngularASPNETCore2WebApiAuth.Data;
+using AngularASPNETCore2WebApiAuth.Helpers;
+using AngularASPNETCore2WebApiAuth.Models.Entities;
+using AngularASPNETCore2WebApiAuth.ViewModels;
 using AutoMapper;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
-namespace PaulTest.Controllers
+namespace AngularASPNETCore2WebApiAuth.Controllers
 {
     [Route("api/[controller]")] 
     public class AccountsController : Controller

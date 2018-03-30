@@ -1,7 +1,7 @@
 using System.Security.Claims;
 using System.Threading.Tasks;
 
-namespace PaulTest.Auth
+namespace AngularASPNETCore2WebApiAuth.Auth
 {
     public interface IJwtFactory
     {

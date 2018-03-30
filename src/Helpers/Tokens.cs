@@ -1,11 +1,11 @@
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using PaulTest.Auth;
-using PaulTest.Models;
+using AngularASPNETCore2WebApiAuth.Auth;
+using AngularASPNETCore2WebApiAuth.Models;
 using Newtonsoft.Json;
 
-namespace PaulTest.Helpers
+namespace AngularASPNETCore2WebApiAuth.Helpers
 {
     public class Tokens
     {

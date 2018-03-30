@@ -2,7 +2,7 @@ using System;
 using System.Threading.Tasks;
 using Microsoft.IdentityModel.Tokens;
 
-namespace PaulTest.Models
+namespace AngularASPNETCore2WebApiAuth.Models
 {
     public class JwtIssuerOptions
     {

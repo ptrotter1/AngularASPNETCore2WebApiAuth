@@ -1,6 +1,6 @@
 using FluentValidation;
 
-namespace PaulTest.ViewModels.Validations
+namespace AngularASPNETCore2WebApiAuth.ViewModels.Validations
 {
     public class CredentialsViewModelValidator : AbstractValidator<CredentialsViewModel>
     {

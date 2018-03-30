@@ -1,9 +1,9 @@
-using PaulTest.Models.Entities;
+using AngularASPNETCore2WebApiAuth.Models.Entities;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 
-namespace PaulTest.Data
+namespace AngularASPNETCore2WebApiAuth.Data
 {
     public class ApplicationDbContext : IdentityDbContext<AppUser>
     {

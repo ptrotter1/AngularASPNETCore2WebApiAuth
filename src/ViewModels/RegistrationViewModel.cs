@@ -1,4 +1,4 @@
-namespace PaulTest.ViewModels
+namespace AngularASPNETCore2WebApiAuth.ViewModels
 {
     public class RegistrationViewModel
     {

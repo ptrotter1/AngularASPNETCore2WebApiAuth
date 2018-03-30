@@ -5,8 +5,8 @@ using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
-using PaulTest.Data;
-using PaulTest.Models.Entities;
+using AngularASPNETCore2WebApiAuth.Data;
+using AngularASPNETCore2WebApiAuth.Models.Entities;
 using Microsoft.AspNetCore.Identity;
 using AutoMapper;
 using FluentValidation.AspNetCore;
@@ -15,14 +15,14 @@ using System.Net;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using PaulTest.Auth;
+using AngularASPNETCore2WebApiAuth.Auth;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using System;
-using PaulTest.Helpers;
-using PaulTest.Models;
+using AngularASPNETCore2WebApiAuth.Helpers;
+using AngularASPNETCore2WebApiAuth.Models;
 
-namespace PaulTest
+namespace AngularASPNETCore2WebApiAuth
 {
     public class Startup
     {
@@ -42,7 +42,7 @@ namespace PaulTest
             // Add framework services.
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"),
-                b => b.MigrationsAssembly("PaulTest")));
+                b => b.MigrationsAssembly("AngularASPNETCore2WebApiAuth")));
 
             // JWT Singleton goes here
             services.AddSingleton<IJwtFactory, JwtFactory>();

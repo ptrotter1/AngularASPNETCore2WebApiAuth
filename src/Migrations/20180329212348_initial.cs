@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace PaulTest.Migrations
+namespace AngularASPNETCore2WebApiAuth.Migrations
 {
     public partial class initial : Migration
     {

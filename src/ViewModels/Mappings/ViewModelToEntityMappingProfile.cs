@@ -1,7 +1,7 @@
-using PaulTest.Models.Entities;
+using AngularASPNETCore2WebApiAuth.Models.Entities;
 using AutoMapper;
 
-namespace PaulTest.ViewModels.Mappings
+namespace AngularASPNETCore2WebApiAuth.ViewModels.Mappings
 {
     public class ViewModelToEntityMappingProfile : Profile
     {

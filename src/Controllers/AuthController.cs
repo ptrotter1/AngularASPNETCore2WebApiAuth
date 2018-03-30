@@ -1,19 +1,16 @@
-﻿
- 
 using System.Security.Claims;
 using System.Threading.Tasks;
-using AngularASPNETCore2WebApiAuth.Auth;
-using AngularASPNETCore2WebApiAuth.Helpers;
-using AngularASPNETCore2WebApiAuth.Models;
-using AngularASPNETCore2WebApiAuth.Models.Entities;
-using AngularASPNETCore2WebApiAuth.ViewModels;
+using PaulTest.Auth;
+using PaulTest.Helpers;
+using PaulTest.Models;
+using PaulTest.Models.Entities;
+using PaulTest.ViewModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
- 
 
-namespace AngularASPNETCore2WebApiAuth.Controllers
+namespace PaulTest.Controllers
 {
     [Route("api/[controller]")]
     public class AuthController : Controller

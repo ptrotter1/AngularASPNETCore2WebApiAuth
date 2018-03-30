@@ -1,16 +1,13 @@
-﻿
-
 using System.Threading.Tasks;
-using AngularASPNETCore2WebApiAuth.Data;
-using AngularASPNETCore2WebApiAuth.Helpers;
-using AngularASPNETCore2WebApiAuth.Models.Entities;
-using AngularASPNETCore2WebApiAuth.ViewModels;
+using PaulTest.Data;
+using PaulTest.Helpers;
+using PaulTest.Models.Entities;
+using PaulTest.ViewModels;
 using AutoMapper;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
- 
 
-namespace AngularASPNETCore2WebApiAuth.Controllers
+namespace PaulTest.Controllers
 {
     [Route("api/[controller]")] 
     public class AccountsController : Controller
@@ -37,11 +34,10 @@ namespace AngularASPNETCore2WebApiAuth.Controllers
 
             var userIdentity = _mapper.Map<AppUser>(model);
 
-            var result = await _userManager.CreateAsync(userIdentity, model.Password);
+            IdentityResult result = await _userManager.CreateAsync(userIdentity, model.Password);
 
             if (!result.Succeeded) return new BadRequestObjectResult(Errors.AddErrorsToModelState(result, ModelState));
 
-            await _appDbContext.Customers.AddAsync(new Customer { IdentityId = userIdentity.Id, Location = model.Location });
             await _appDbContext.SaveChangesAsync();
 
             return new OkObjectResult("Account created");

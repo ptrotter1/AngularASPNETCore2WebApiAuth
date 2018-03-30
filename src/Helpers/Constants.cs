@@ -1,5 +1,4 @@
-﻿
-namespace AngularASPNETCore2WebApiAuth.Helpers
+namespace PaulTest.Helpers
 {
     public static class Constants
     {

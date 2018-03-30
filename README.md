@@ -12,7 +12,7 @@ https://fullstackmark.com/post/13/jwt-authentication-with-aspnet-core-2-web-api-
 
 ## Setup
 To build and run the project using the command line:
-1. Install npm packages with `npm install` in the `src` directory.
+1. Install npm packages with `npm install` in the `src/ClientApp` directory.
 2. Restore nuget packages with `dotnet restore` in the `src` directory.
 3. Create the database with `dotnet ef database update` in the `src` directory.
 4. Run the project with `dotnet run` in the `src` directory.
